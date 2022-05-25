@@ -33,7 +33,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@ElikplimAmedzro](https://twitter.com/Amedzro-Elikplim)
 - LinkedIn: [Emmanuel Elikplim Amedzro](https://www.linkedin.com/in/emmanuel-elikplim-amedzro-187590125/)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
