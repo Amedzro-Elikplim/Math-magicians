@@ -14,9 +14,9 @@ class Calculator extends PureComponent {
   render() {
     return (
       calculatorKeys.map((button) => (
-        <div key={button.key.toString()} className={button.className}>
+        <button type="button" key={button.key.toString()} className={button.className}>
           {button.key}
-        </div>
+        </button>
       ))
     );
   }
