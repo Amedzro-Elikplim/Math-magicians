@@ -1,0 +1,17 @@
+.white-bg {
+    border: 1px solid black;
+    text-align: center;
+    height: 100%;
+}
+
+.orange-bg {
+    text-align: center;
+    height: 100%;
+}
+
+.gray-bg {
+    text-align: center;
+    grid-column: span 3;
+    background-color: gray;
+    height: 100%;
+}

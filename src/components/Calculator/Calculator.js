@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import calculatorKeys from '../utils/CalculatorKeys';
+import calculatorKeys from '../../utils/CalculatorKeys';
+import './Calculator.css';
 
 class Calculator extends PureComponent {
   constructor(props) {
@@ -13,11 +14,10 @@ class Calculator extends PureComponent {
   render() {
     return (
       calculatorKeys.map((button) => (
-        <div key={button.key.toString()}>
+        <div key={button.key.toString()} className={button.className}>
           {button.key}
         </div>
       ))
-
     );
   }
 }
