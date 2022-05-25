@@ -1,23 +1,21 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-
 .calculator-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    border: 1px solid black;
-    width: 30vw;
-    min-height: 50vh;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 30vw;
+  min-height: 50vh;
+  padding: 10px;
 }
