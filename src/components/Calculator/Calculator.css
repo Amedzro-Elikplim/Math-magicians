@@ -1,17 +1,30 @@
 .white-bg {
-    border: 1px solid black;
-    text-align: center;
-    height: 100%;
+  border: 1px solid rgb(235, 232, 232);
+  text-align: center;
+  height: 100%;
+  height: 70px;
+  line-height: 70px;
 }
 
 .orange-bg {
-    text-align: center;
-    height: 100%;
+  text-align: center;
+  height: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: orange;
+  border-bottom: 1px solid rgb(211, 211, 211);
 }
 
 .gray-bg {
-    text-align: center;
-    grid-column: span 3;
-    background-color: gray;
-    height: 100%;
+  text-align: right;
+  vertical-align: middle;
+  grid-column: span 4;
+  background-color: gray;
+  height: 70px;
+  line-height: 70px;
+  padding-right: 10px;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
