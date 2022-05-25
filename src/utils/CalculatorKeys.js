@@ -1,5 +1,5 @@
 const calculatorKeys = [
-  { key: 0, className: 'grey-bg' },
+  { key: 0, className: 'gray-bg' },
   { key: 'AC', className: 'white-bg' },
   { key: '+/-', className: 'white-bg' },
   { key: '%', className: 'white-bg' },
