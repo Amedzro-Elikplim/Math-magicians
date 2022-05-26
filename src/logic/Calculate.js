@@ -1,4 +1,4 @@
-import operate from './operate';
+import operate from './operate.jsx';
 
 function isNumber(item) {
   return !!item.match(/[0-9]+/);
