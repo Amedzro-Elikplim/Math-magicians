@@ -20,12 +20,26 @@ class Calculator extends PureComponent {
   };
 
   render() {
+    const { total, next, operation } = this.state;
     return (
-      calculatorKeys.map((button) => (
-        <button type="button" name={button.key} key={button.key.toString()} className={button.className} onClick={this.handleOperation}>
-          {button.key}
-        </button>
-      ))
+      <div className="calculator-container">
+        <div className="gray-bg">
+          {operation}
+          {next}
+          {total}
+        </div>
+        {calculatorKeys.map((button) => (
+          <button
+            type="button"
+            name={button.key}
+            key={button.key.toString()}
+            className={button.className}
+            onClick={this.handleOperation}
+          >
+            {button.key}
+          </button>
+        ))}
+      </div>
     );
   }
 }
