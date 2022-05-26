@@ -1,23 +1,46 @@
 import React, { PureComponent } from 'react';
 import calculatorKeys from '../../utils/CalculatorKeys';
+import calculate from '../../logic/calculate';
 import './Calculator.css';
 
 class Calculator extends PureComponent {
   constructor(props) {
     super(props);
-
     this.state = {
-
+      total: 0,
+      next: null,
+      operation: null,
     };
+    this.handleOperation = this.handleOperation.bind(this);
   }
 
+  handleOperation = (e) => {
+    const { name } = e.target;
+    const UPDATED_STATE = calculate(this.state, name);
+    this.setState(UPDATED_STATE);
+  };
+
   render() {
+    const { total, next, operation } = this.state;
     return (
-      calculatorKeys.map((button) => (
-        <div key={button.key.toString()} className={button.className}>
-          {button.key}
+      <div className="calculator-container">
+        <div className="gray-bg">
+          {total}
+          {operation}
+          {next}
         </div>
-      ))
+        {calculatorKeys.map((button) => (
+          <button
+            type="button"
+            name={button.key}
+            key={button.key.toString()}
+            className={button.className}
+            onClick={this.handleOperation}
+          >
+            {button.key}
+          </button>
+        ))}
+      </div>
     );
   }
 }
