@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import calculatorKeys from '../../utils/CalculatorKeys';
-import calculate from '../../logic/calculate.jsx';
+import calculate from '../../logic/calculate';
 import './Calculator.css';
 
 class Calculator extends PureComponent {
