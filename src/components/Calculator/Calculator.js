@@ -15,8 +15,9 @@ class Calculator extends PureComponent {
   }
 
   handleOperation = (e) => {
-    const state = calculate(this.state, e.target.name);
-    this.setState(state);
+    const { name } = e.target;
+    const UPDATED_STATE = calculate(this.state, name);
+    this.setState(UPDATED_STATE);
   };
 
   render() {
