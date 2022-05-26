@@ -24,9 +24,9 @@ class Calculator extends PureComponent {
     return (
       <div className="calculator-container">
         <div className="gray-bg">
+          { total }
           {operation}
           {next}
-          {total}
         </div>
         {calculatorKeys.map((button) => (
           <button
