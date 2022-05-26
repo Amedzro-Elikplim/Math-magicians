@@ -1,48 +1,42 @@
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import calculatorKeys from '../../utils/CalculatorKeys';
 import calculate from '../../logic/calculate';
 import './Calculator.css';
 
-class Calculator extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-    this.handleOperation = this.handleOperation.bind(this);
-  }
-
-  handleOperation = (e) => {
-    const { name } = e.target;
-    const UPDATED_STATE = calculate(this.state, name);
-    this.setState(UPDATED_STATE);
+const Calculator = () => {
+  const initialState = {
+    total: 0,
+    next: null,
+    operation: null,
   };
+  const [state, setState] = useState(initialState);
+  const { total, next, operation } = state;
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div className="calculator-container">
-        <div className="gray-bg">
-          {total}
-          {operation}
-          {next}
-        </div>
-        {calculatorKeys.map((button) => (
-          <button
-            type="button"
-            name={button.key}
-            key={button.key.toString()}
-            className={button.className}
-            onClick={this.handleOperation}
-          >
-            {button.key}
-          </button>
-        ))}
+  const handleOperation = (e) => {
+    const { name } = e.target;
+    const UPDATED_STATE = calculate(state, name);
+    setState(UPDATED_STATE);
+  };
+  return (
+    <div className="calculator-container">
+      <div className="gray-bg">
+        {total}
+        {operation}
+        {next}
       </div>
-    );
-  }
-}
+      {calculatorKeys.map((button) => (
+        <button
+          type="button"
+          name={button.key}
+          key={button.key.toString()}
+          className={button.className}
+          onClick={handleOperation}
+        >
+          {button.key}
+        </button>
+      ))}
+    </div>
+  );
+};
 
 export default Calculator;
