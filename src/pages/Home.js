@@ -5,7 +5,7 @@ import Nav from '../components/Navbar/Nav';
 function Home() {
   return (
     <div>
-      <Nav />
+      Home page
     </div>
   );
 }
