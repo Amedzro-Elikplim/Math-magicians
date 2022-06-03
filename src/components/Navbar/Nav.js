@@ -7,9 +7,15 @@ function Nav() {
     <nav className="nav d-flex">
       <h3>Math Magician</h3>
       <ul className="nav-links d-flex">
-        <Link to="/">Home</Link>
-        <Link to="/calculate">Calculator</Link>
-        <Link to="/about">Quote</Link>
+        <Link className="link" to="/">
+          Home
+        </Link>
+        <Link className="link" to="/calculate">
+          Calculator
+        </Link>
+        <Link className="link" to="/about">
+          Quote
+        </Link>
       </ul>
     </nav>
   );
