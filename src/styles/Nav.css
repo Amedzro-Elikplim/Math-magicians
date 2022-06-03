@@ -8,8 +8,16 @@
     width: 100%;
     justify-content: space-between;
     padding: 20px;
+    box-shadow: 1px 1px 10px gray;
 }
 
+
 .nav-links {
-    gap: 10px;
+    gap: 20px;
 }
+
+.link {
+    border-left: 2px solid rgb(152, 70, 160);
+    padding-left: 5px;
+}
+
