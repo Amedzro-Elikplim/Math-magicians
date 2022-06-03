@@ -1,3 +1,15 @@
+.calculator-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 30vw;
+  min-height: 50vh;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
 .white-bg {
   border: 1px solid rgb(235, 232, 232);
   text-align: center;
