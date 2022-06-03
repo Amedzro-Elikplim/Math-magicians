@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <nav className="nav d-flex">
-      <h3>Math Magician</h3>
+      <h2>Math Magician</h2>
       <ul className="nav-links d-flex">
         <Link className="link" to="/">
           Home
