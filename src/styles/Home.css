@@ -1,20 +1,20 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    padding: 20px;
+  padding: 20px;
 }
 
 .heading {
-    margin: 20px;
-    font-size: 60px;
+  margin: 20px;
+  font-size: 60px;
 }
 
 .paragraph {
-    font-weight: 500;
-    font-size: larger;
-    width: 70vw;
+  font-weight: 500;
+  font-size: larger;
+  width: 70vw;
 }
