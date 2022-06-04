@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 1px 1px 10px gray;
+}
+
+.nav-links {
+  gap: 20px;
+  height: 100%;
+}
+
+.link {
+  border-left: 1px solid rgb(152, 70, 160);
+  padding-left: 5px;
+}

@@ -18,23 +18,26 @@ const Calculator = () => {
     setState(UPDATED_STATE);
   };
   return (
-    <div className="calculator-container">
-      <div className="gray-bg">
-        {total}
-        {operation}
-        {next}
+    <div className="calculator-wrapper d-flex">
+      <h3>Lets do some math!</h3>
+      <div className="calculator-container">
+        <div className="gray-bg">
+          {total}
+          {operation}
+          {next}
+        </div>
+        {calculatorKeys.map((button) => (
+          <button
+            type="button"
+            name={button.key}
+            key={button.key.toString()}
+            className={button.className}
+            onClick={handleOperation}
+          >
+            {button.key}
+          </button>
+        ))}
       </div>
-      {calculatorKeys.map((button) => (
-        <button
-          type="button"
-          name={button.key}
-          key={button.key.toString()}
-          className={button.className}
-          onClick={handleOperation}
-        >
-          {button.key}
-        </button>
-      ))}
     </div>
   );
 };

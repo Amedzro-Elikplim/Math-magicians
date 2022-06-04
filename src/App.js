@@ -1,9 +1,19 @@
-import './App.css';
-import Calculator from './components/Calculator/Calculator';
+import { Routes, Route } from 'react-router-dom';
+import Calculate from './pages/Calculate';
+import Home from './pages/Home';
+import Quote from './pages/Quote';
+import Nav from './components/Navbar/Nav';
 
 function App() {
   return (
-    <Calculator />
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculate" element={<Calculate />} />
+        <Route path="/about" element={<Quote />} />
+      </Routes>
+    </>
   );
 }
 
