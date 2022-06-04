@@ -8,6 +8,10 @@ Additional description about the project and its features.
 ## Built With
 - React js
 
+## Live Demo
+
+[Live Demo Link](https://math-magicians-microverse.netlify.app)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
